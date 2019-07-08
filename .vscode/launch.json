@@ -1,0 +1,35 @@
+{
+  // 使用 IntelliSense 了解相关属性。
+  // 悬停以查看现有属性的描述。
+  // 欲了解更多信息，请访问: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Debug TypeScript in Node.js",
+      "preLaunchTask": "typescript", // 选择 task.json 中 tasks 中对应label命名
+      "program": "${workspaceFolder}/src/server.ts", // 指向我们创建的server.ts
+      "cwd": "${workspaceFolder}",
+      "protocol": "inspector", // 调试协议为 inspector
+      "runtimeExecutable": "nodemon",
+      "restart": true,
+      "console": "integratedTerminal",
+      "outFiles": ["${workspaceFolder}/dist/*.js"]
+    },
+    {
+      "name": "Current TS File",
+      "type": "node",
+      "request": "launch",
+      // rumtimeArgs 传递参数给 node
+      "runtimeArgs": [
+        "-r",
+        "ts-node/register" //  注册 ts-node 以处理 TypeScript 文件
+        // "-r"
+        // "tsconfig-paths/register" // 注册 tsconfig-paths 处理 tsconfig.json 中配置的 paths 路径映射
+      ],
+
+      "args": ["${workspaceFolder}/src/server.ts"]
+    }
+  ]
+}
