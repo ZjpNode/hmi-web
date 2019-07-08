@@ -1,0 +1,25 @@
+{
+  "name": "hmi-web",
+  "version": "1.0.0",
+  "description": "hmi-web by koa2 + MongoDB + GraphQL + fabricjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ZjpNode/hmi-web.git"
+  },
+  "keywords": [
+    "koa2",
+    "MongoDB",
+    "GraphQL",
+    "fabricjs"
+  ],
+  "author": "zjp",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ZjpNode/hmi-web/issues"
+  },
+  "homepage": "https://github.com/ZjpNode/hmi-web#readme"
+}
