@@ -2,9 +2,9 @@
 
 hmi-web by
 
-###Getting Started
-####Installation
-#####npm
+### Getting Started
+#### Installation
+##### npm
 
 ```
 # install with npm
