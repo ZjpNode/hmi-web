@@ -6,7 +6,8 @@ const router = new Router();
 
 router.get('/*', async (ctx) => {
     console.log('1232')
-    ctx.body = 'hello world';
+	debugger
+    ctx.body = 'hello world21';
 });
 
 app.use(router.routes());

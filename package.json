@@ -4,8 +4,10 @@
   "description": "hmi-web by koa2 + MongoDB + GraphQL + typescript + fabricjs",
   "main": "index.js",
   "scripts": {
-    "start": "tsc && node dist/server.js",
-    "watch": "nodemon ./src/server.ts",
+    "build": "tsc",
+    "start": "tsc & node dist/index.js",
+    "debugger": "nodemon --watch ./src -e ts,tsx --exec node --inspect -r ts-node/register ./src/server.ts",
+    "watch-serve": "nodemon --watch ./src -e ts,tsx --exec ts-node ./src/server.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

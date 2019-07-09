@@ -16,20 +16,6 @@
       "restart": true,
       "console": "integratedTerminal",
       "outFiles": ["${workspaceFolder}/dist/*.js"]
-    },
-    {
-      "name": "Current TS File",
-      "type": "node",
-      "request": "launch",
-      // rumtimeArgs 传递参数给 node
-      "runtimeArgs": [
-        "-r",
-        "ts-node/register" //  注册 ts-node 以处理 TypeScript 文件
-        // "-r"
-        // "tsconfig-paths/register" // 注册 tsconfig-paths 处理 tsconfig.json 中配置的 paths 路径映射
-      ],
-
-      "args": ["${workspaceFolder}/src/server.ts"]
     }
   ]
 }
