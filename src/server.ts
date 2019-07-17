@@ -1,14 +1,20 @@
 import Koa from 'koa';
 import Router from 'koa-router';
 
+
+import { db } from './mongodb' // 引入mongodb
+import { fetchInfo } from './mongodb/controllers/user' // 引入info controller
+
+db() // 链接数据库并且初始化数据模型
+
 const app = new Koa();
 const router = new Router();
-
-router.get('/*', async (ctx) => {
-    console.log('1232')
-	debugger
-    ctx.body = 'hello world21';
+router.get('/test', (ctx, next) => {
+    ctx.body = "test page"
 });
+router.get('/student', fetchInfo)
+
+
 
 app.use(router.routes());
 
