@@ -28,13 +28,20 @@
   },
   "homepage": "https://github.com/ZjpNode/hmi-web#readme",
   "dependencies": {
+    "graphql": "^14.4.2",
+    "graphql-server-koa": "^1.4.1",
     "koa": "^2.7.0",
+    "koa-bodyparser": "^4.2.1",
     "koa-router": "^7.4.0",
+    "koa-static": "^5.0.0",
     "mongoose": "^5.6.4"
   },
   "devDependencies": {
+    "@types/graphql": "^14.2.2",
     "@types/koa": "^2.0.49",
+    "@types/koa-bodyparser": "^4.3.0",
     "@types/koa-router": "^7.0.42",
+    "@types/koa-static": "^4.0.1",
     "@types/mongoose": "^5.5.8",
     "nodemon": "^1.19.1",
     "ts-node": "^8.3.0",
