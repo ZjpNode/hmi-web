@@ -27,6 +27,22 @@ body {
   grid-column-start: nav-start;
   grid-column-end: nav-end;
 }
+nav .img-list {
+  padding: 0;
+}
+nav .img-list .img-item {
+  cursor: pointer;
+  padding: 10px;
+}
+.img-item:hover {
+  background-color: #e3e3e3;
+}
+nav .img-list .img-item img {
+  padding: 0 5px;
+  width: 25px;
+  height: 25px;
+}
+
 /* main */
 .base-layout main {
   grid-column-start: main-start;

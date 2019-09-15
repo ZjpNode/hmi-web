@@ -37,7 +37,7 @@ let InfoType = new GraphQLObjectType({
 })
 
 // 批量查询
-const infos = {
+export const infos = {
     type: new GraphQLList(InfoType),
     args: {},
     resolve() {
@@ -47,7 +47,7 @@ const infos = {
 
 // 根据id查询单条info数据
 
-const info = {
+export const info = {
     type: InfoType,
     // 传进来的参数
     args: {
@@ -61,15 +61,3 @@ const info = {
         return Info.findOne({ _id: params.id }).exec() // 查询单条数据
     }
 }
-
-// 导出GraphQLSchema模块
-
-export default new GraphQLSchema({
-    query: new GraphQLObjectType({
-        name: 'Queries',
-        fields: {
-            infos,
-            info
-        }
-    })
-})

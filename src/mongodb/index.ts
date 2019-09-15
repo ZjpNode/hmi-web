@@ -5,6 +5,7 @@ const { dbPath, user, pass } = config.testUserDB
 
 // 同步引入 user model
 require('./scheme/user')
+require('./scheme/assembly')
 
 export const db = () => {
     mongoose.set('debug', true)

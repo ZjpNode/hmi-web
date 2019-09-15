@@ -4,7 +4,7 @@ import Router from 'koa-router';
 import { graphqlKoa, graphiqlKoa } from 'graphql-server-koa'
 import { fetchInfo } from '../controllers/user'
 
-import schema from '../graphql/schema'
+import schema from '../graphql/index'
 
 
 const router = require('koa-router')()

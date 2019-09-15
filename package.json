@@ -30,6 +30,7 @@
   "dependencies": {
     "graphql": "^14.4.2",
     "graphql-server-koa": "^1.4.1",
+    "graphql-type-json": "^0.3.0",
     "koa": "^2.7.0",
     "koa-bodyparser": "^4.2.1",
     "koa-router": "^7.4.0",
